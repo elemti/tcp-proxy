@@ -1,19 +1,28 @@
 {
-  "name": "tcp-proxy",
+  "name": "@elemti/tcp-proxy",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "minimist": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npx np --yolo"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bin": {
     "tcp-proxy": "./bin/tcp-proxy"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elemti/tcp-proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elemti/tcp-proxy/issues"
+  },
+  "homepage": "https://github.com/elemti/tcp-proxy#readme",
+  "description": ""
 }

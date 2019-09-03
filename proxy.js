@@ -20,8 +20,7 @@ module.exports = (_from, _to) => {
             toConn.on('error', err => {
                 toConn.destroy();
                 fromConn.destroy();
-                proxyServer.close();
-                setTimeout(() => startForward(), 0);
+                proxyServer.close(() => startForward());
             });
             fromConn.pipe(toConn);
             toConn.pipe(fromConn);
